@@ -1,9 +1,9 @@
-#YOLOv3 Tensorflow Implementation
-=A tensorflow implementation of YOLOv3.
+# YOLOv3 Tensorflow Implementation
+A tensorflow implementation of YOLOv3.
 
 
-##test
-=If you want to test the model, you should:
+## Test
+If you want to test the model, you should:
 
 1. First download the weights file using "wget https://pjreddie.com/media/files/yolov3.weights"<br>
 2. Put the yolov3.weights into your path and run "python convert --ckpt 1 --weights_path yourpath" to convert the weights into .ckpt  <br>        ---For example, run
@@ -24,10 +24,10 @@ python test.py --ckpt_dir your_ckpt_dir --ckpt 1 --GPU_options 0
 python test.py --ckpt_dir experiments/ckpt --ckpt 1 --GPU_options 0
 ```
 
-##results:
-=![](https://github.com/csjiangwm/YOLOv3-tensorflow/blob/master/prediction.jpg) 
+## Results:
+![](https://github.com/csjiangwm/YOLOv3-tensorflow/blob/master/prediction.jpg) 
 
-##train
+## Train
 =If you want to train your own data, you should:
 
 1. First download the weights file using 
@@ -68,7 +68,7 @@ python test.py --ckpt 1 --ckpt_dir your_ckpt_direxperiments/ckpt #Bash
 python test.py --ckpt 1 --ckpt_dir
 ```
 
-references:<br>
+## References:
 https://pjreddie.com/media/files/papers/YOLOv3.pdf <br>
 https://pjreddie.com/darknet/yolo <br>
 https://github.com/qqwweee/keras-yolo3 <br>
