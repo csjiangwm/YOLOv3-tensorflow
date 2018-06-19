@@ -18,7 +18,10 @@ for testing, otherwise, run
 ```Bash
 python test.py --ckpt_dir your_ckpt_dir --ckpt 1 --GPU_options 0
 ```
----For example, run "python test.py --ckpt_dir experiments/ckpt --ckpt 1 --GPU_options 0"<br>
+---For example, run
+```Bash
+python test.py --ckpt_dir experiments/ckpt --ckpt 1 --GPU_options 0
+```
 
 ##results:<br>
 ![](https://github.com/csjiangwm/YOLOv3-tensorflow/blob/master/prediction.jpg) 
