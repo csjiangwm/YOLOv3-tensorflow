@@ -20,6 +20,7 @@ If you want to train your own data, you should:
 
 2. Put the yolov3.weights into your path and run "python convert --cvt2npz 1 --weights_path yourpath" to convert the weights into .npz      
 	   ---For example, run "python convert.py --cvt2npz 1 --weights_path ~/darknet/darknet53.conv.74"
+   
    Also, you can directly download the converted npz file from "https://pan.baidu.com/s/13u38HIclp0iPoP1JVmZYsQ" with extract code: "swyf"
 
 3. Change the value of __C.trained_img_num to your total number of training images in configs/config.py and change __C.batch_size if necessary
@@ -41,6 +42,7 @@ If you want to train your own data, you should:
 
 
 references:
+
 https://pjreddie.com/media/files/papers/YOLOv3.pdf
 
 https://pjreddie.com/darknet/yolo
