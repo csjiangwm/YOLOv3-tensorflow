@@ -39,7 +39,11 @@ If you want to train your own data, you should:
 
 references:
 https://pjreddie.com/media/files/papers/YOLOv3.pdf
+
 https://pjreddie.com/darknet/yolo
+
 https://github.com/qqwweee/keras-yolo3
+
 https://github.com/Robinatp/YOLO_Tensorflow
+
 https://github.com/raytroop/YOLOv3_tf
