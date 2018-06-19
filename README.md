@@ -12,7 +12,7 @@ python convert.py --ckpt 1 --weights_path ~/darknet/yolov3.weights
 Also, you can directly download the converted ckpt files from "https://pan.baidu.com/s/1mBxcNwFZW-JEOZOiu73JfA" with extract code: "6d3s"<br>
 3. If your PC has GPUs, run
 ```Bash
-python test.py --ckpt_dir your_ckpt_dir --ckpt 1 #Bash
+python test.py --ckpt_dir your_ckpt_dir --ckpt 1//Bash
 ```
 for testing, otherwise, run
 ```Bash
