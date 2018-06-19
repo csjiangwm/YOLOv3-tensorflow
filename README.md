@@ -9,7 +9,7 @@ If you want to test the model, you should:
 ```Bash
 python convert.py --ckpt 1 --weights_path ~/darknet/yolov3.weights
 ```
-Also, you can directly download the converted ckpt files from "https://pan.baidu.com/s/1mBxcNwFZW-JEOZOiu73JfA" with extract code: "6d3s"<br>
+Also, you can directly download the converted ckpt files from [BaiduyunDisk](https://pan.baidu.com/s/1mBxcNwFZW-JEOZOiu73JfA) with extract code: "6d3s"<br>
 3. If your PC has GPUs, run
 ```Bash
 python test.py --ckpt_dir your_ckpt_dir --ckpt 1
@@ -34,7 +34,11 @@ If you want to train your own data, you should:
 wget https://pjreddie.com/media/files/darknet53.conv.74
 ``` 
 <br>
-2. Put the yolov3.weights into your path and run "python convert --cvt2npz 1 --weights_path yourpath" to convert the weights into .npz <br>        ---For example, run "python convert.py --cvt2npz 1 --weights_path ~/darknet/darknet53.conv.74" <br>    Also, you can directly download the converted npz file from "https://pan.baidu.com/s/13u38HIclp0iPoP1JVmZYsQ" with extract code: "swyf" <br>
+2. Put the yolov3.weights into your path and run "python convert --cvt2npz 1 --weights_path yourpath" to convert the weights into .npz <br>        ---For example, run 
+```Bash
+python convert.py --npz 1 --weights_path ~/darknet/darknet53.conv.74
+```
+Also, you can directly download the converted npz file from [BaiduyunDisk](https://pan.baidu.com/s/13u38HIclp0iPoP1JVmZYsQ) with extract code: "swyf" <br>
 3. Change the value of __C.trained_img_num to your total number of training images in configs/config.py and change __C.batch_size if necessary <br>
 4. If you want to train your model from darknet53.conv.74, use <br>
 ```Bash
