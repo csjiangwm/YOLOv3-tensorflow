@@ -28,7 +28,7 @@ python test.py --ckpt_dir experiments/ckpt --ckpt 1 --GPU_options 0
 ![](https://github.com/csjiangwm/YOLOv3-tensorflow/blob/master/prediction.jpg) 
 
 ## Train
-=If you want to train your own data, you should:
+If you want to train your own data, you should:
 
 1. First download the weights file using 
 ```Bash
