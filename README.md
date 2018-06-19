@@ -11,6 +11,9 @@ If you want to test the model, you should:
 3. If your PC has GPUs, run "python test.py --ckpt_dir your_ckpt_dir --ckpt 1" for testing, otherwise, run "python test.py --ckpt_dir your_ckpt_dir --ckpt 1 --GPU_options 0"    \<br>
 	 ---For example, run "python test.py --ckpt_dir experiments/ckpt --ckpt 1 --GPU_options 0"
 
+##results:
+![](https://github.com/csjiangwm/YOLOv3-tensorflow/blob/master/prediction.jpg) 
+
 #train
 If you want to train your own data, you should:
 
