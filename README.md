@@ -5,36 +5,29 @@ A tensorflow implementation of YOLOv3.
 If you want to test the model, you should:
 
 1. First download the weights file using "wget https://pjreddie.com/media/files/yolov3.weights"
-
 2. Put the yolov3.weights into your path and run "python convert --ckpt 1 --weights_path yourpath" to convert the weights into .ckpt  \<br>
 	 ---For example, run "python convert.py --ckpt 1 --weights_path ~/darknet/yolov3.weights"\<br>
-   Also, you can directly download the converted ckpt files from "https://pan.baidu.com/s/1mBxcNwFZW-JEOZOiu73JfA" with extract code: "6d3s"
-
+   Also, you can directly download the converted ckpt files from "https://pan.baidu.com/s/1mBxcNwFZW-JEOZOiu73JfA" with extract code: "6d3s"\<br>
 3. If your PC has GPUs, run "python test.py --ckpt_dir your_ckpt_dir --ckpt 1" for testing, otherwise, run "python test.py --ckpt_dir your_ckpt_dir --ckpt 1 --GPU_options 0"    \<br>
 	 ---For example, run "python test.py --ckpt_dir experiments/ckpt --ckpt 1 --GPU_options 0"
 
 #train
 If you want to train your own data, you should:
 
-1. First download the weights file using "wget https://pjreddie.com/media/files/darknet53.conv.74"
-
+1. First download the weights file using "wget https://pjreddie.com/media/files/darknet53.conv.74"\<br>
 2. Put the yolov3.weights into your path and run "python convert --cvt2npz 1 --weights_path yourpath" to convert the weights into .npz \<br>        ---For example, run "python convert.py --cvt2npz 1 --weights_path ~/darknet/darknet53.conv.74"\<br>
-   Also, you can directly download the converted npz file from "https://pan.baidu.com/s/13u38HIclp0iPoP1JVmZYsQ" with extract code: "swyf"
-
-3. Change the value of __C.trained_img_num to your total number of training images in configs/config.py and change __C.batch_size if necessary
-
-4. If you want to train your model from darknet53.conv.74, use "python train.py --npz_path your_npz_path\\<br>
-                                                                                --imgs_path your_data_path\\<br>
-                                                                                --xml_path your_xml_path\\<br>
-                                                                                --classes_path your_classes_file_path"\<br>
+   Also, you can directly download the converted npz file from "https://pan.baidu.com/s/13u38HIclp0iPoP1JVmZYsQ" with extract code: "swyf"\<br>
+3. Change the value of __C.trained_img_num to your total number of training images in configs/config.py and change __C.batch_size if necessary\<br>
+4. If you want to train your model from darknet53.conv.74, use "python train.py --npz_path your_npz_path\   \<br>
+                                                                                --imgs_path your_data_path\   \<br>
+                                                                                --xml_path your_xml_path\  \<br>
+                                                                                --classes_path your_classes_file_path"  \<br>
 										
-   If you want to train your model from your last checkpoint, use "python train.py --imgs_path your_data_path\\<br>
-                                                                                   --xml_path your_xml_path\\<br>
-                                                                                   --classes_path your_classes_file_path\\<br>
-                                                                                   --restart 0"\<br>
-										   
+   If you want to train your model from your last checkpoint, use "python train.py --imgs_path your_data_path\  \<br>
+                                                                                   --xml_path your_xml_path\  \<br>
+                                                                                   --classes_path your_classes_file_path\  \<br>
+                                                                                   --restart 0"  \<br>
    Note the parameter GPU_options should be also altered if necessary (whether your PC has GPUs or not)\<br>
-
 5. Run "python test.py --ckpt 1 --ckpt_dir your_ckpt_dir" for testing\<br>
          ---For example, run "python test.py --ckpt 1 --ckpt_dir experiments/ckpt"
 
