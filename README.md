@@ -35,10 +35,11 @@ wget https://pjreddie.com/media/files/darknet53.conv.74
 ``` 
 <br>
 2. Put the yolov3.weights into your path and run "python convert --cvt2npz 1 --weights_path yourpath" to convert the weights into .npz <br>        ---For example, run 
+
 ```Bash
 python convert.py --npz 1 --weights_path ~/darknet/darknet53.conv.74
 ```
-
+<br>
 Also, you can directly download the converted npz file from [BaiduyunDisk](https://pan.baidu.com/s/13u38HIclp0iPoP1JVmZYsQ) with extract code: "swyf" <br>
 3. Change the value of __C.trained_img_num to your total number of training images in configs/config.py and change __C.batch_size if necessary <br>
 4. If you want to train your model from darknet53.conv.74, use <br>
