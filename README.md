@@ -36,8 +36,8 @@ If you want to train your own data, you should:
 
 
 references:\<br>
-https://pjreddie.com/media/files/papers/YOLOv3.pdf \<br>
-https://pjreddie.com/darknet/yolo \<br>
-https://github.com/qqwweee/keras-yolo3 \<br>
-https://github.com/raytroop/YOLOv3_tf \<br>
+https://pjreddie.com/media/files/papers/YOLOv3.pdf <br>
+https://pjreddie.com/darknet/yolo <br>
+https://github.com/qqwweee/keras-yolo3 <br>
+https://github.com/raytroop/YOLOv3_tf <br>
 https://github.com/Robinatp/YOLO_Tensorflow
