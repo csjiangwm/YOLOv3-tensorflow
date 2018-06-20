@@ -61,7 +61,7 @@ python train.py --imgs_path your_data_path\
    Note the parameter GPU_options should be also altered if necessary (whether your PC has GPUs or not) <br>
 5. Run
 ```Bash
-python test.py --ckpt 1 --ckpt_dir your_ckpt_direxperiments/ckpt #Bash
+python test.py --ckpt 1 --ckpt_dir your_ckpt_direxperiments/ckpt --classes_path your_classes_file_path
 ```
  for testing <br>        ---For example, run
 ```Bash
