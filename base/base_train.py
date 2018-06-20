@@ -17,20 +17,20 @@ class BaseTrain(object):
         self.model.init_global_step()
         self.model.init_cur_epoch()
         
-        
-    def build_training(self):
         self.model.build()
         self.model.compute_loss()
         self.model.optimize()
-        self.model.load(self.sess)
+        self.model.init_saver()
+        
         
 
     def train(self):
         '''
         start training
         '''
-        self.model.init_saver()
-        self.build_training()
+        
+        
+        self.model.load(self.sess)
         
         for cur_epoch in range(self.model.cur_epoch_tensor.eval(self.sess), self.config.train.num_epochs + 1, 1):
             loss = self.train_epoch()
